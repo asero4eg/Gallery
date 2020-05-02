@@ -1,0 +1,119 @@
+@font-face {
+    font-family: AmaticSC-Bold;
+    src: url(fonts/AmaticSC-Bold.ttf);
+}
+
+@font-face {
+    font-family: AmaticSC-Regular;
+    src: url(fonts/AmaticSC-Regular.ttf);
+}
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?h616k8');
+    src:  url('fonts/icomoon.eot?h616k8#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?h616k8') format('truetype'),
+      url('fonts/icomoon.woff?h616k8') format('woff'),
+      url('fonts/icomoon.svg?h616k8#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-dribbble:before {
+    content: "\e900";
+    color: #2e3187;
+    
+  }
+  .icon-instagram:before {
+    content: "\e901";
+    color: #2e3187;
+  }
+  .icon-linkedin:before {
+    content: "\e902";
+    color: #2e3187;
+  }
+  .icon-youtube:before {
+    content: "\e903";
+    color: #2e3187;
+  }
+
+
+* {
+    font-family: AmaticSC-Bold;
+}
+
+.logo-img {
+    max-width: 100px;
+}
+
+.navbar {
+    text-transform: uppercase;
+}
+
+.list-logo-elem {
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-link-hover {
+    color: #2d3035;
+    transition: 0.2s;
+}
+
+.nav-link-hover:hover {
+    color: #ff7442;
+    transition: 0.2s;
+}
+
+.load-more {
+    border: 1px solid #dbdbdb;
+    border-radius: 15px;
+    transition: 0.2s;
+}
+
+.load-more:hover {
+    transition: 0.2s;
+    border: 1px solid #ff7442;
+    box-shadow: inset 0 0 0 2em #ff7442;
+    color: white;
+
+}
+
+.card {
+    cursor: pointer;
+}
+
+footer {
+    background-color: #dbdbdb;
+    overflow: hidden;
+}
+.footer-link-img {
+    fill: aqua;
+}
+.copyright {
+    font-weight: 600;
+    color: #2e3187;
+
+}
+.list-inline-item a:hover {
+    text-decoration: none;
+}
+.list-inline-item:hover .social-link:before {
+    transition: 0.2s;
+    color: #ff7442;
+}
