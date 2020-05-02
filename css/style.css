@@ -7,20 +7,21 @@
     font-family: AmaticSC-Regular;
     src: url(fonts/AmaticSC-Regular.ttf);
 }
+
 @font-face {
     font-family: 'icomoon';
-    src:  url('fonts/icomoon.eot?h616k8');
-    src:  url('fonts/icomoon.eot?h616k8#iefix') format('embedded-opentype'),
-      url('fonts/icomoon.ttf?h616k8') format('truetype'),
-      url('fonts/icomoon.woff?h616k8') format('woff'),
-      url('fonts/icomoon.svg?h616k8#icomoon') format('svg');
+    src: url('fonts/icomoon.eot?h616k8');
+    src: url('fonts/icomoon.eot?h616k8#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?h616k8') format('truetype'),
+        url('fonts/icomoon.woff?h616k8') format('woff'),
+        url('fonts/icomoon.svg?h616k8#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
-  }
-  
-  [class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
     font-family: 'icomoon' !important;
     speak: none;
     font-style: normal;
@@ -28,29 +29,31 @@
     font-variant: normal;
     text-transform: none;
     line-height: 1;
-  
-    /* Better Font Rendering =========== */
+
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .icon-dribbble:before {
+}
+
+.icon-dribbble:before {
     content: "\e900";
     color: #2e3187;
-    
-  }
-  .icon-instagram:before {
+
+}
+
+.icon-instagram:before {
     content: "\e901";
     color: #2e3187;
-  }
-  .icon-linkedin:before {
+}
+
+.icon-linkedin:before {
     content: "\e902";
     color: #2e3187;
-  }
-  .icon-youtube:before {
+}
+
+.icon-youtube:before {
     content: "\e903";
     color: #2e3187;
-  }
+}
 
 
 * {
@@ -59,37 +62,58 @@
 
 .logo-img {
     max-width: 100px;
+    transition: 0.1s;
 }
-
+.nav-button-image .logo-img:hover{
+    max-width: 105px;
+    transition: 0.1s;
+} 
+.nav-button-image{
+    border: none;
+}
 .navbar {
     text-transform: uppercase;
 }
 
 .list-logo-elem {
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .nav-link-hover {
     color: #2d3035;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
     transition: 0.2s;
 }
 
 .nav-link-hover:hover {
     color: #ff7442;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
     transition: 0.2s;
 }
 
 .load-more {
     border: 1px solid #dbdbdb;
     border-radius: 15px;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
     transition: 0.2s;
 }
 
 .load-more:hover {
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
     transition: 0.2s;
     border: 1px solid #ff7442;
-    box-shadow: inset 0 0 0 2em #ff7442;
+    -webkit-box-shadow: inset 0 0 0 2em #ff7442;
+            box-shadow: inset 0 0 0 2em #ff7442;
     color: white;
 
 }
@@ -102,18 +126,56 @@ footer {
     background-color: #dbdbdb;
     overflow: hidden;
 }
+
 .footer-link-img {
     fill: aqua;
 }
+
 .copyright {
     font-weight: 600;
     color: #2e3187;
 
 }
+
 .list-inline-item a:hover {
     text-decoration: none;
 }
+
 .list-inline-item:hover .social-link:before {
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
     transition: 0.2s;
     color: #ff7442;
+}
+
+.social-link {
+    margin-bottom: 0;
+}
+
+.goTopButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: #dbdbdb;
+    color: #2e3187;
+    cursor: pointer;
+    padding: 15px;
+    font-family: AmaticSC-Regular;
+    border-radius: 15px;
+    font-size: 18px;
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+}
+
+.goTopButton:hover {
+    color: white;
+    border: 1px solid #ff7442;
+    -webkit-box-shadow: inset 0 0 0 2em #ff7442;
+            box-shadow: inset 0 0 0 2em #ff7442;
 }
