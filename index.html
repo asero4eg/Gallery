@@ -10,6 +10,7 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Olha Lion</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
 </head>
 
 <body>
@@ -27,9 +28,9 @@
                             <h4><a class="nav-link-hover" href="#">Projects</a></h4>
                         </li>
                         <li class="nav-item">
-                            <h4><a class="nav-link-hover" href="#">Illustration</a></h4>
+                            <h4><a class="nav-link-hover scrollTo" href="#anchor1">Illustration</a></h4>
                         </li>
-                        <li class="nav-item d-sm-none d-lg-inline-block">
+                        <li class="nav-item d-sm-none d-none d-lg-inline-block">
                             <a class="nav-link d-flex list-logo-elem" href="#"><img class="logo-img"
                                     src="css/media/logo_1.png"></a>
                         </li>
@@ -43,10 +44,11 @@
                 </div>
             </div>
         </nav>
-    </header>
+        <div id="anchor2"></div>
 
+    </header>
     <main role="main">
-        <div class="album py-2 bg-light">
+        <div class="album py-2 bg-light" id="anchor1">
             <div class="container">
                 <!-- image blocks -->
                 <div class="row" id="#">
@@ -132,22 +134,22 @@
                         <ul class="list-unstyled list-inline">
                             <li class="list-inline-item">
                                 <a href="#">
-                                    <h2 class="icon-dribbble social-link"></h2>
+                                    <p class="icon-dribbble social-link"></p>
                                 </a>
                             </li>
                             <li class="list-inline-item">
                                 <a href="#">
-                                    <h2 class="icon-linkedin social-link"></h2>
+                                    <p class="icon-linkedin social-link"></p>
                                 </a>
                             </li>
                             <li class="list-inline-item">
                                 <a href="#">
-                                    <h2 class="icon-youtube social-link"></h2>
+                                    <p class="icon-youtube social-link"></p>
                                 </a>
                             </li>
                             <li class="list-inline-item">
                                 <a href="#">
-                                    <h2 class="icon-instagram social-link"></h2>
+                                    <p class="icon-instagram social-link"></p>
                                 </a>
                             </li>
                         </ul>
@@ -156,18 +158,16 @@
             </div>
         </div>
     </footer>
-    <button class="button goTopButton" onclick="topFunction()" id="goTopBut" title="Go to top">Top</button>
+    <div class="goTopButton" id="button"><a href="#anchor2" title="Go to top">Top</a></div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-    </script>
+    
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
-    <script src="js/goTop.js"></script>
+    <script src="js/anchor.js"></script>
 </body>
 
 </html>
