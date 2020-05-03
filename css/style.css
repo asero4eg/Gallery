@@ -65,11 +65,6 @@
     transition: 0.1s;
 }
 
-.nav-button-image .logo-img:hover {
-    max-width: 105px;
-    transition: 0.1s;
-}
-
 .nav-button-image {
     border: none;
 }
@@ -124,6 +119,9 @@
 .card {
     cursor: pointer;
 }
+.imgBlock {
+    display: none;
+}
 
 footer {
     background-color: #dbdbdb;
@@ -153,12 +151,11 @@ footer {
 
 .social-link {
     margin-bottom: 0;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 .goTopButton {
-    transition: background-color .3s,
-        opacity .5s, visibility .5s;
+    transition: 0.1s;
     opacity: 0;
     visibility: hidden;
     display: block;
@@ -167,9 +164,9 @@ footer {
     right: 20px;
     z-index: 100;
     outline: none;
-    border: 1px solid white;
+    border: 1px solid #dbdbdb;
     border-radius: 15px;
-    background-color: #dbdbdb;
+    background-color: white;
     color: #2e3187;
     cursor: pointer;
     padding: 15px;
@@ -179,6 +176,7 @@ footer {
 }
 
 .goTopButton:hover {
+    text-decoration: none;
     color: white;
     border: 1px solid #ff7442;
     -webkit-box-shadow: inset 0 0 0 2em #ff7442;
@@ -188,4 +186,5 @@ footer {
 .show {
     visibility: visible;
     opacity: 1;
+    transition: 0.2s;
 }
