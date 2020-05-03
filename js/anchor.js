@@ -31,8 +31,7 @@ $(document).ready(function () {
 // Load more
   $(function () {
     $(".imgBlock").slice(0, 6).show();
-    $("#loadMore").on('click', function (e) {
-        e.preventDefault();
+    $("#loadMore").on('click', function () {
         $("div:hidden").slice(0, 6).slideDown();
         if ($(".imgBlock:hidden").length == 0) {
             $("#load").fadeOut('slow');
